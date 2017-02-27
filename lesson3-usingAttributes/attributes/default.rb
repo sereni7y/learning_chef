@@ -1,0 +1,9 @@
+default['tomcat']['user.group'] = 'tomcat'
+default['tomcat']['user'] = 'tomcat'
+default['tomcat']['user.shell'] = '/bin/bash'
+default['tomcat']['user.home.dir'] = '/home/tomcat'
+default['tomcat']['user.manage_home'] = true
+default['tomcat']['install.dir'] = '/opt/tomcat/'
+default['tomcat']['install.dir.mode'] = '0755'
+default['tomcat']['version'] = 'apache-tomcat-8.5.9'
+default['tomcat']['download.url'] = 'http://archive.apache.org/dist/tomcat/tomcat-8/v8.5.9/bin/'

@@ -1,0 +1,18 @@
+upload a cookbook to the chef server
+	knife cookbook upload learn_chef_apache2
+
+list cookbooks on a server
+	knife cookbook list
+
+bootstrap a node
+	knife bootstrap user@ipAddr --sudo --identity-file /vagrant/.vagrant/machines/node/virtualbox/private_key --node-name node --run-list 'recipe[*cookbook*]'
+	
+list node
+	knife node list
+
+view a node
+	knife node show node
+
+update a node
+	knife ssh ipAddr 'sudo chef-client' --manual-list --ssh-user vagrant --identity-file /vagrant/.vagrant/machines/node1-ubuntu/virtualbox/private_key
+	
